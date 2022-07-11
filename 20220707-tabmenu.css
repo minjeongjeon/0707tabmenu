@@ -1,0 +1,89 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.tabmenu {
+    width: 1400px;
+    margin: 0 auto;
+}
+.tabmenu > * {
+    display: none;
+}
+.tabmenu label {
+    display: inline-block;
+    width: 18%;
+    background-color: #eee;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: #777;
+    font-size: 14px;
+    font-weight: bold;
+    transition: .3s;
+    border-width: 1px 1px 0 0;
+    border-radius: 3px 3px 0 0;
+}
+.tabmenu label:hover {
+    color: #fff;
+}
+.tabmenu .a:hover {
+    background-color: pink;
+}
+.tabmenu .b:hover {
+    background-color: lightcoral;
+}
+.tabmenu .c:hover {
+    background-color: rgb(133, 133, 221);
+}
+.tabmenu .d:hover {
+    background-color: gold;
+}
+.tabmenu .e:hover {
+    background-color: coral;
+}
+.tabmenu #tab1:checked ~ .tab1-content {
+    display: block;
+}
+.tabmenu #tab2:checked ~ .tab2-content {
+    display: block;
+}
+.tabmenu #tab3:checked ~ .tab3-content {
+    display: block;
+}
+.tabmenu #tab4:checked ~ .tab4-content {
+    display: block;
+}
+.tabmenu #tab5:checked ~ .tab5-content {
+    display: block;
+}
+
+.tabmenu #tab1:checked ~ .a {
+    background-color: pink;
+    color: #fff;
+}
+/* tabmenu누르면 활성화(색 유지) 되는 속성 */
+.tabmenu #tab2:checked ~ .b {
+    background-color: lightcoral;
+    color: #fff;
+}
+.tabmenu #tab3:checked ~ .c {
+    background-color: rgb(133, 133, 221);
+    color: #fff;
+}
+.tabmenu #tab4:checked ~ .d {
+    background-color: gold;
+    color: #fff;
+}
+.tabmenu #tab5:checked ~ .e {
+    background-color: coral;
+    color: #fff;
+}
